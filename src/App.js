@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import Books from './components/Books';
 import Categories from './components/Categories';
@@ -7,7 +7,7 @@ import NoPage from './components/NoPage';
 import './index.css';
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Books />} />
@@ -15,7 +15,7 @@ const App = () => (
         <Route path="*" element={<NoPage />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
