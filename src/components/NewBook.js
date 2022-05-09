@@ -1,9 +1,17 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { removeBookAction } from '../redux/books/books';
 
 const NewBook = ({ book }) => {
   console.log(book);
-  const { title, author } = book;
+  const { id, title, author } = book;
+  console.log(id);
+
+  const dispatch = useDispatch();
+  const removeBookStore = () => {
+    dispatch(removeBookAction({ id }));
+  };
   return (
     <>
       <div className="row container mx-auto mb-3 px-3 py-3 bg-white d-flex align-items-between justify-content-between">
@@ -22,6 +30,7 @@ const NewBook = ({ book }) => {
             <button
               type="button"
               className="btn1 border-end px-3 py-0 m-0 text-3"
+              onClick={removeBookStore}
             >
               Remove
             </button>
