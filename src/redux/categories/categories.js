@@ -1,7 +1,17 @@
-import React from 'react';
+const STATUS = 'STATUS';
 
-const categories = () => {
-  return <div>categories</div>;
+export const checkStatusAction = () => ({
+  type: STATUS,
+});
+
+const categoriesReducer = (state = '', action) => {
+  const information = 'UNDER-CONSTRUCTION';
+  switch (action.type) {
+    case STATUS:
+      return information;
+    default:
+      return state;
+  }
 };
 
-export default categories;
+export default categoriesReducer;

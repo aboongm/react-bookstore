@@ -1,7 +1,10 @@
-import React from 'react';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import booksReducer from './books/books';
+import categoriesReducer from './categories/categories';
 
-const configureStore = () => {
-  return <div>configureStore</div>;
-};
+const rootReducer = combineReducers({ booksReducer, categoriesReducer });
 
-export default configureStore;
+const store = createStore(rootReducer, applyMiddleware(thunk));
+
+export default store;
