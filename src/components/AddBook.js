@@ -9,7 +9,7 @@ const AddBook = () => {
   const [author, setAuthor] = useState('');
 
   const newBook = {
-    id: v4,
+    id: v4(),
     title,
     author,
   };
