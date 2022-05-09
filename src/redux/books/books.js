@@ -1,23 +1,7 @@
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
-const initialState = [
-  // {
-  //   id: 1,
-  //   title: 'Hunger Games',
-  //   author: 'Suzanne Collins',
-  // },
-  // {
-  //   id: 2,
-  //   title: 'Dune',
-  //   author: 'Frank Herbert',
-  // },
-  // {
-  //   id: 3,
-  //   title: 'Capital in The Twenty-First Century',
-  //   author: 'Suzanne Collins',
-  // },
-];
+const initialState = [];
 
 export const addBookAction = (payload) => ({
   type: ADD_BOOK,
