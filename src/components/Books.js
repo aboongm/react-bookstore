@@ -5,7 +5,7 @@ import AddBook from './AddBook';
 
 const Books = () => {
   const bookList = useSelector((state) => state.booksReducer);
-  console.log(bookList);
+  // console.log(bookList);
   return (
     <>
       {bookList.length ? (
