@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 import { removeBookAction } from '../redux/books/books';
 
 const NewBook = ({ book }) => {
-  console.log(book);
   const { id, title, author } = book;
-  console.log(id);
 
   const dispatch = useDispatch();
   const removeBookStore = () => {
