@@ -93,22 +93,16 @@ a:focus {
   font-size: 8px;
 }
 
+.text-5 {
+  color: #9c9c9c;
+  font-size: 1.2rem;
+}
+
 .btn {
   font-size: 8px;
   background-color: #0290ff;
   color: #fff;
   padding: 3px 14px;
-}
-
-.circle-bar {
-  /* width: 48px;
-  height: 48px; */
-
-  /* background-color: lightblue; */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #progress-spinner {
@@ -190,4 +184,22 @@ input[type='reset'] {
 
 ::placeholder {
   color: #c9c9c9;
+}
+
+.circle-bar {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 100px;
+  border-top-color: #469ae7;
+  border-image-slice: 1;
+  border-right-color: #469ae7;
+  border-left-color: #dcdbdc;
+  border-bottom-color: #469ae7;
+}
+
+.btn1 {
+  border: none;
+  background-color: white;
 }
