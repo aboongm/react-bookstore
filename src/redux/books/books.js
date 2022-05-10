@@ -4,7 +4,8 @@ const ADD_BOOK = '/bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 const FETCH_BOOK = 'bookstore/books/FETCH_BOOK';
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/rHDO6tM9rSslDiRZWYoP/books';
+const url =
+  'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/rHDO6tM9rSslDiRZWYoP/books';
 
 const initialState = [];
 
@@ -22,6 +23,18 @@ const fetchBook = (payload) => ({
   type: FETCH_BOOK,
   payload,
 });
+
+export const addBookApiAction = (payload) => async (dispatch) => {
+  const { id, title, author } = payload;
+  const newBook = {
+    item_id: id,
+    title,
+    author,
+    category: 'Fiction',
+  };
+  await axios.post(url, newBook);
+  dispatch(addBookAction(payload));
+};
 
 export const fetchBookApiAction = () => async (dispatch) => {
   const books = await axios.get(url);
