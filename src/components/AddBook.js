@@ -16,6 +16,7 @@ const AddBook = () => {
 
   const addBookStore = (e) => {
     e.preventDefault();
+    if (title === '' || author === '') return;
     dispatch(addBookApiAction(newBook));
     setTitle('');
     setAuthor('');
