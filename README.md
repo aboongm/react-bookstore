@@ -16,6 +16,7 @@ coming ...
 
 - ReactJs
 - Redux
+- Redux-thunk
 - Bootstrap
 
 ## Live Demo
