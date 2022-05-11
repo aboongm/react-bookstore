@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 } from 'uuid';
-import { addBookAction } from '../redux/books/books';
+import { addBookApiAction } from '../redux/books/books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -16,7 +16,8 @@ const AddBook = () => {
 
   const addBookStore = (e) => {
     e.preventDefault();
-    dispatch(addBookAction(newBook));
+    if (title === '' || author === '') return;
+    dispatch(addBookApiAction(newBook));
     setTitle('');
     setAuthor('');
   };
