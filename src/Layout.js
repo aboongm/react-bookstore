@@ -3,9 +3,9 @@ import { IoIosPerson } from 'react-icons/io';
 
 const Layout = () => (
   <>
-    <header className="bg-white mb-4">
+    <header className="bg-white mb-5">
       <nav className="container d-flex align-items-center justify-content-between p-0">
-        <ul className="d-flex align-items-center justify-content-between m-0 p-0 gap-4">
+        <ul className="d-flex align-items-center justify-content-between m-0 p-0 gap-5">
           <li className="header-text">Bookstore CMS</li>
           <li>
             <Link to="/">BOOKS</Link>

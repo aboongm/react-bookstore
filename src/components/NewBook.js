@@ -10,15 +10,17 @@ const NewBook = ({ book }) => {
   const removeBookStore = () => {
     dispatch(removeBookApiAction(id));
   };
+
   return (
     <>
-      <div className="row container mx-auto mb-3 px-3 py-3 bg-white d-flex align-items-between justify-content-between">
+      <div className="book row container mx-auto mb-4 px-4 py-3 bg-white d-flex align-items-between justify-content-between">
         <div className="col-5 m-0 p-0">
           <div className="mx-0 mb-2 p-0">
-            <h4 className="m-0 p-0 text-2">{title}</h4>
-            <p className="m-0 p-0 text-3">{author}</p>
+            <p className="m-0 px-0 pt-3 pb-1 text-1">Action</p>
+            <h4 className="m-0 px-0 py-1 text-2">{title}</h4>
+            <p className="m-0 px-0 py-1 text-3">{author}</p>
           </div>
-          <div className="d-flex align-items-center justify-content-start m-0 p-0">
+          <div className="d-flex align-items-center justify-content-start m-0 px-0 py-2">
             <button
               type="button"
               className="btn1 border-end pe-3 py-0 m-0 text-3"
@@ -41,18 +43,18 @@ const NewBook = ({ book }) => {
           </div>
         </div>
         <div className="row col-7 m-0  p-0 d-flex align-items-center justify-content-between">
-          <div className="border-end col-6 m-0 pe-4 d-flex align-items-center justify-content-start">
+          <div className="border-end col-6 m-0 ps-4  d-flex align-items-center justify-content-start">
             <div>
               <div className="circle-bar" />
             </div>
-            <div className="m-0 ps-3">
-              <p className="p-0 m-0 fs-4">64%</p>
-              <p className="p-0 m-0 text-1">completed</p>
+            <div className="m-0 ps-4">
+              <p className="p-0 m-0 text-5">64%</p>
+              <p className="p-0 m-0 text-6">Completed</p>
             </div>
           </div>
-          <div className="col-6 m-0 ps-4">
+          <div className="col-6 m-0 py-0 ps-5">
             <p className="m-0 p-0 text-4">CURRENT CHAPTER</p>
-            <p className="m-0 p-0 text-1">chapter</p>
+            <p className="mx-0 my-2 p-0 text-7">Chapter</p>
             <button type="button" className="btn">
               UPDATE PROGRESS
             </button>

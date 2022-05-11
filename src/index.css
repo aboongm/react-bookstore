@@ -43,8 +43,8 @@ ul {
 }
 
 .header-text {
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875rem;
   font-weight: bold;
   color: #0290ff;
   padding: 14px 0;
@@ -55,54 +55,122 @@ a:-webkit-any-link {
   text-decoration: none;
   color: #9c9c9c;
   cursor: pointer;
-  font-size: 8px;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
 }
 
 a:focus {
-  color: black;
+  color: #121212;
 }
 
 .icon {
   border: 1px solid #ebebeb;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  padding: 5px;
+  width: 2.813rem;
+  height: 2.813rem;
+  padding: 10px;
   color: #0290ff;
   cursor: pointer;
 }
 
-.text-1,
-.text-3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 9px;
+.text-1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
 }
 
 .text-3 {
-  color: #b7d0e6;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
 .text-2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 11px;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1.375rem;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
 }
 
 .text-4 {
-  color: #9c9c9c;
-  font-size: 8px;
+  opacity: 0.5;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
 .text-5 {
-  color: #9c9c9c;
-  font-size: 1.2rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.text-6 {
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.text-7 {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
 }
 
 .btn {
-  font-size: 8px;
   background-color: #0290ff;
   color: #fff;
-  padding: 3px 14px;
+  padding: 0.56rem 1.8rem 0.56rem 1.8rem;
+  border-radius: 3px;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 0.75rem 0 0.563rem 0;
 }
 
 #progress-spinner {
@@ -141,45 +209,52 @@ a:focus {
 
 .label {
   display: block;
-  font-size: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
   font-weight: bold;
-  color: #8f8888;
-  padding: 10px 0 4px 0;
-  margin: 0;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
 }
 
 /* .form-box input */
 input[type='text']:nth-child(1) {
   width: 56%;
-  font-size: 10px;
-  padding: 4px;
-  color: #333;
-  border: 1px solid #e9e9e9;
-  border-radius: 2px;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
 }
 
 input[type='text']:nth-child(2) {
   width: 24%;
-  font-size: 10px;
-  color: #c9c9c9;
-  padding: 4px;
   margin-left: 2.5%;
-  border: 1px solid #e9e9e9;
-  border-radius: 2px;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
 }
 
 input[type='button'],
 input[type='submit'],
 input[type='reset'] {
-  font-size: 8px;
-  background-color: #0290ff;
-  color: #fff;
-  padding: 6px 14px;
-  border: none;
-  text-decoration: none;
-  margin-left: 2.5%;
-  cursor: pointer;
   width: 15%;
+  margin-left: 2.5%;
+  padding: 1.1rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -187,10 +262,10 @@ input[type='reset'] {
 }
 
 .circle-bar {
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 4.25rem;
+  height: 4.25rem;
   border-style: solid;
-  border-width: 3px;
+  border-width: 5px;
   border-radius: 100px;
   border-top-color: #469ae7;
   border-image-slice: 1;
