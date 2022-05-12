@@ -6,11 +6,8 @@ This is a Bookstore website.
 
 ## Desktop
 
-coming ...
-
-## Mobile
-
-coming ...
+![Desktop Books](https://user-images.githubusercontent.com/49184579/168017289-47e97d96-c9cf-407d-9163-15fa3aae8ae0.png)
+![Desktop categories](https://user-images.githubusercontent.com/49184579/168017372-e8f8a891-8f11-4ac1-9b22-eb3b4243655d.png)
 
 ## Built With &hearts;
 
