@@ -1,6 +1,6 @@
 # React Project: Bookstore
 
-This is a Bookstore website.
+This is a bookstore project built with ReactJS and Redux. Here the first step is building the ReactJS web app using local data and rendering them, adding them, or removing them. The next step is to replace local data with data from the server using Axios API preserving the same functionalities.
 
 # Screen Shots
 
