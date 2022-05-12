@@ -14,6 +14,7 @@ This is a Bookstore website.
 - ReactJs
 - Redux
 - Redux-thunk
+- Axios
 - Bootstrap
 
 ## Live Demo
